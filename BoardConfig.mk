@@ -30,5 +30,8 @@ BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # Include proprietary files
 include vendor/xiaomi/redwood/BoardConfigVendor.mk
